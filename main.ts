@@ -9,6 +9,17 @@ input.onButtonPressed(Button.A, function () {
         basic.showIcon(IconNames.Square)
     }
 })
+input.onButtonPressed(Button.AB, function () {
+    basic.showIcon(IconNames.Diamond)
+    basic.showIcon(IconNames.SmallDiamond)
+    basic.showIcon(IconNames.Diamond)
+    basic.showIcon(IconNames.SmallDiamond)
+    if (Math.randomBoolean()) {
+        basic.showIcon(IconNames.Skull)
+    } else {
+        basic.showIcon(IconNames.Square)
+    }
+})
 input.onButtonPressed(Button.B, function () {
     basic.showIcon(IconNames.Diamond)
     basic.showIcon(IconNames.SmallDiamond)
